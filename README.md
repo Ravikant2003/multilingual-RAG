@@ -144,19 +144,18 @@ export GOOGLE_API_KEY="your-google-api-key"
 
 1. **Document Upload**:
    - Drag and drop PDF files in the sidebar
-   - Support for multiple files simultaneously
+   - Support for single files only but can expand to multiple languages
    - Progress indicators for processing
 
 2. **Interactive Chat**:
    - Real-time question answering
    - Conversation history
    - Source document references
-   - Confidence scoring
 
 3. **Document Management**:
    - View processed documents
    - Clear conversation history
-   - Reset vector store
+   - Automatic Vector store reset
 
 ### Programmatic Usage
 ```python
@@ -211,6 +210,7 @@ query = "Compare the economic policies of 2020 and 2021"
 ### OCR Engine
 - **Tesseract** with language packs
 - Support for Hindi, Bengali, Chinese, Urdu
+- Further Plans of switching from traditional OCR models to enhanced Models like EasyOCR or PaddleOCR
 
 ## 🚀 Scaling to 1TB
 
@@ -230,14 +230,14 @@ query = "Compare the economic policies of 2020 and 2021"
 - **Format Preservation**: Difficulty in maintaining original document structure
 
 ### 2. LLM Constraints
-- **Model Size Limitations**: Explored smaller models but faced quality trade-offs
+- **Model Size Limitations**: Explored smaller models but faced quality trade-offs hence had to rely on Gemini 
 - **Multilingual Capabilities**: Smaller models struggled with non-English languages
 - **Context Understanding**: Limited reasoning capabilities in compact models
 
 ### 3. Language Processing
-- **Accuracy Issues**: Current answer retrieval accuracy needs improvement
+- **Accuracy Issues**: Current answer retrieval accuracy needs improvement it hallucinates at times.
 - **Context Relevance**: Challenges in ensuring answers are properly grounded in context
-- **Language Switching**: Handling documents with multiple languages mixed
+- **Language Switching**: Handling documents with multiple languages mixed .
 
 ### 4. Streamlit Integration
 - **State Management**: Handling conversation memory across sessions
@@ -247,23 +247,24 @@ query = "Compare the economic policies of 2020 and 2021"
 ## 🔮 Future Enhancements
 
 ### Planned Improvements
-- [ ] Advanced OCR solutions (Google Vision, Azure OCR)
+- [ ] Advanced OCR solutions (Google Vision, Azure OCR, EasyOCR)
 - [ ] Integration of smaller, efficient LLMs with better multilingual support
 - [ ] Enhanced language detection and processing
 - [ ] Improved context-aware answer generation
 - [ ] Better chunking strategies for multilingual content
 - [ ] Advanced Streamlit features like document preview and annotation
+- [ ] Allowing entry of multiple PDFs or files, instead of single file.
 
 ## 🚧 Important Note
 
-**Development Timeline**: This project was completed within approximately 8-10 hours instead of the allocated 72 hours due to prior commitments. The compressed timeline impacted:
+**Development Timeline**: This project was completed within approximately 8-10 hours instead of the allocated 72 hours due to prior commitments and travel plans i had during the given time segment. The compressed timeline impacted:
 
 - Depth of OCR integration and accuracy
 - Exploration of smaller LLM alternatives
 - Comprehensive testing across all language combinations
 
 
-Despite these constraints, the system demonstrates a solid foundation for multilingual RAG with all core requirements implemented and a functional Streamlit web interface.
+Despite these constraints, the system demonstrates a solid foundation for multilingual RAG with all core requirements implemented and a functional Streamlit web interface.If there is need for any enhancements or usage of better models, would be ready to integrate and work on the same. 
 
 
 
